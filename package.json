@@ -1,0 +1,26 @@
+{
+  "name": "campuslands-cli-node",
+  "version": "1.0.0",
+  "description": "ejercicio-basico-nodejs",
+  "keywords": [
+    "NODEJS",
+    "START",
+    "JSON"
+  ],
+  "homepage": "https://github.com/lestergarcia711/campuslands-cli-node#readme",
+  "bugs": {
+    "url": "https://github.com/lestergarcia711/campuslands-cli-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lestergarcia711/campuslands-cli-node.git"
+  },
+  "license": "ISC",
+  "author": "lestergarcia711",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  }
+}
