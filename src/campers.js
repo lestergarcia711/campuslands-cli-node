@@ -48,7 +48,9 @@ export async function listarCampers() {
 }
 
 export async function buscarCamperPorNombre(termino) {
-    const campers = await leerCampers();
-    return campers.filter(c => c.nombre.toLowerCase().includes(termino.toLowerCase()));
+  if (!termino) return [];
+  const campers = await leerCampers();
+  const filtro = termino.toLowerCase().trim();
+  return campers.filter(c => c.nombre.toLowerCase().includes(filtro));
 }
 
